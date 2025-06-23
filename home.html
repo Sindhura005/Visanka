@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="reg.css" />
+  <style>
+    .top-bar {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .top-bar a {
+      text-decoration: none;
+    }
+
+    .top-bar button {
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: #5c6bc0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .top-bar button.logout {
+      background-color: #e74c3c;
+    }
+
+    .main-options {
+      margin-top: 80px; /* Push below top bar */
+    }
+  </style>
+
+
+</head>
+<body>
+   <div class="top-bar">
+    <a href="profile.html"><button>👤 View Profile</button></a>
+    <a href="login.html"><button class="logout">🚪 Logout</button></a>
+  </div> 
+  <div class="form-container">
+    <h2>Welcome, User!</h2>
+    <p>What would you like to do?</p>
+
+    <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+      <a href="order.html"><button>🍔 Order Food</button></a>
+      <a href="book.html"><button>🏨 Book Room</button></a>
+    
+    </div>
+  </div>
+</body>
+</html>
