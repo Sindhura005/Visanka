@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Role</title>
+  <link rel="stylesheet" href="reg.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('BG.webp'); /* 💡 replace with your actual image file name */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    .role-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    button {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffffc2;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f2a5d2;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="role-container">
+    <h1>Who Are You?</h1>
+    <button onclick="window.location.href='user-dashboard.html'">I'm a User</button>
+    <button onclick="window.location.href='role-login.html'">I'm a Staff</button>
+  </div>
+
+</body>
+</html>
